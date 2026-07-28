@@ -7,7 +7,6 @@ def shoot_arrow():
     arrow_x = randint(100, 300)
     arrow_y = randint(100, 300)
     hit_colour = get(arrow_x, arrow_y).hex
-    #print(hit_colour)
     fill('brown')
     circle(arrow_x, arrow_y, 15)
 
@@ -34,7 +33,6 @@ def draw():
     shoot_arrow()
 
 def mouse_pressed():
-    #print('🎯')
     if hit_colour == Color('blue').hex:
         print('You hit the outer circle, 50 points!')
     elif hit_colour == Color('red').hex:
